@@ -1,0 +1,3 @@
+for windows pip install telepot
+for server in pythonanywhere pip3 install --user telepot
+
