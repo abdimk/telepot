@@ -1,7 +1,7 @@
 import phonenumbers
 from phonenumbers import geocoder
 from phonenumbers import carrier
-number = "+2510939167494"
+number = "5664790786"
 
 my_number = phonenumbers.parse(number, "CH")
 name = geocoder.description_for_number(my_number, "en")
