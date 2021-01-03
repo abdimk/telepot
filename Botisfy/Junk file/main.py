@@ -22,4 +22,4 @@ def email_alert(subject,body,to):
 
 
 if __name__ == "__main__":
-    email_alert("Hey", "hello word","0939167494@ethiotelecom.et")
+    email_alert("Hey", "hello word","abdlsa@gmail.com")
