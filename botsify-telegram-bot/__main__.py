@@ -1,5 +1,7 @@
-#@autor abdisa merga date 1/3/2/2021
-#          2021all rights reserved
+#@Author abdisa merga date 1/3/2/2021
+#All Rights Reserved2021
+#This telegram bot will scrap data form Wikipedia by default and images from google and Wikipedia.
+
 
 
 
