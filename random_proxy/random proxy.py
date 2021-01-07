@@ -31,7 +31,7 @@ proxy = get_proxy()
 
 #testing the proxy by sending free sms using textbelt
 resp = requests.post('https://textbelt.com/text',{
-    'phone': '+2510939167494',
+    'phone': '+555555555',
     'message': 'hey abdisa',
     'key': "textbelt",
 },proxies = proxy)
