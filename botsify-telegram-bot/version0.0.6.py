@@ -50,6 +50,13 @@ def on_chat_message(msg):
         bot.sendPhoto(chat_id,photo=helpurl,caption='<code>/start</code> to start the bot\n<code>/about</code> to see the source code\n<code>/help</code> to get help just send specific phrase like <code>Ufc</code>,<code>Bittorrent</code>,<code>Homelander</code> ' ,parse_mode='html',reply_markup=None)
     if command =='/random':
         rand = wikipedia.random()
+        rcvar = wikipedia.search(f'{rand}')
+         try:
+                rbvalue = rcvar[0]
+            except IndexError:
+                bot.sendChatAction(chat_id, 'typing')
+                bot.sendMessage(chat_id,f'opps! Your search-<b>{rand}</b> did not match any documents.',parse_mode='html',reply_markup=None)
+            rvtitle = str(rbvalue)
         rvd = googlesearch.search(f'{rand}', lang='en')
         try:
             rphoto_url_from_google = rvd[0]
@@ -57,7 +64,7 @@ def on_chat_message(msg):
             pass
         try:
             wikipedia.set_lang("en")
-            rvar = wikipedia.search(f'{rand}')
+            rvar = wikipedia.search(f'{rvtitle}')
             try:
                 rvalue = rvar[0]
             except IndexError:
