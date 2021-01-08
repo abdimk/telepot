@@ -1,0 +1,11 @@
+OpenCC
+Pillow
+Pyrogram==1.1.8
+TgCrypto
+youtube_dl==2021.1.3
+requests
+youtube_search
+Flask
+gunicorn
+pyDes
+flask-cors
